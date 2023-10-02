@@ -1,0 +1,41 @@
+[
+    {
+      "Id" : 1,
+      "SellRent" : 1,
+    "Name" : "Hassan Manzil",
+    "Type" : "House",
+     "Price" : 500000,
+     "Image" : "prop1.jpg"
+    },
+    {
+      "Id" : 5,
+      "SellRent" : 1,
+    "Name" : "Mohammad Kainat",
+    "Type" : "Duniya",
+     "Price" : 600000,
+     "Image" : "prop2.jpg"
+    },
+    {
+      "Id" : 2,
+      "SellRent" : 2,
+    "Name" : "Hussain Manzil",
+    "Type" : "House",
+     "Price" : 700000,
+     "Image" : "prop3.jpg"
+    },
+    {
+      "Id" : 3,
+      "SellRent" : 2,
+    "Name" : "Abbas Villa",
+    "Type" : "Villa",
+     "Price" : 60000,
+     "Image" : "prop4.jpg"
+    },
+    {
+      "Id" : 4,
+      "SellRent" : 1,
+    "Name" : "Ali Mansion",
+    "Type" : "Mansion",
+     "Price" : 900000
+    }
+]
