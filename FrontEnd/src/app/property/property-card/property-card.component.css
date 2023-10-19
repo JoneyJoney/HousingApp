@@ -1,5 +1,13 @@
 
+.card-body h1{
+    font-family: fantasy;
+    color: blue;
+}
 
+.font-highlight{
+    font-style: italic;
+    color : red;
+}
 .card-img-wrapper {
     overflow :hidden;
     position: relative;

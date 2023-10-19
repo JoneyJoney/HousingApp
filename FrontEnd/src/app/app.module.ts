@@ -17,7 +17,13 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
 import { NotFoundComponent } from './NotFound/NotFound.component';
 import { UserService } from './services/user.service';
 import { AlertifyService } from './services/alertify.service';
+import { AuthService } from './services/Auth.service';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
   declarations: [		
@@ -37,7 +43,13 @@ import { AlertifyService } from './services/alertify.service';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+    TabsModule.forRoot(),
+    ButtonsModule.forRoot(),
+    BsDatepickerModule.forRoot()
 
 
 
@@ -45,7 +57,8 @@ import { AlertifyService } from './services/alertify.service';
   providers: [
     HousingService,
     UserService,
-    AlertifyService
+    AlertifyService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

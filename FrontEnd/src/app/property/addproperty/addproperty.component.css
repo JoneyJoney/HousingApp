@@ -1,7 +1,27 @@
-.ng-invalid.ng-touched{
+.ng-invalid.ng-touched {
     border-color: red;
 }
-.error-block
-{
-    color:red;
+
+.error-block {
+    color: red;
+}
+
+.photo-control {
+    min-height: 300px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px dashed blue;
+    margin: 5px;
+}
+
+.btn-group>label[ng-reflect-btn-radio] {
+    border-radius: 44px;
+    padding: 0 15px;
+    line-height: 30px;
+    display: inline-block;
+    margin-left: 6;
+}
+
+.reviewcard{
+    height: 500px;
 }
