@@ -24,6 +24,10 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { PropertyDetailResolverService } from './property/propertydetail/property-detail-resolver.service';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { FilterPipe } from './pipes/filter.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   declarations: [		
@@ -36,7 +40,9 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     PropertydetailComponent,
     UserLoginComponent,
     UserRegisterComponent,
-      NotFoundComponent
+      NotFoundComponent,
+      FilterPipe,
+      SortPipe
    ],
   imports: [
     BrowserModule,
@@ -49,7 +55,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    NgxGalleryModule
 
 
 
@@ -58,7 +65,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     HousingService,
     UserService,
     AlertifyService,
-    AuthService
+    AuthService,
+    PropertyDetailResolverService
   ],
   bootstrap: [AppComponent]
 })

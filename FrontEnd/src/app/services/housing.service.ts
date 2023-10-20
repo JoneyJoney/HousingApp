@@ -12,6 +12,9 @@ import { IPropertyBase } from '../model/IPropertyBase';
   providedIn: 'root'
 })
 export class HousingService {
+  getProperty(arg0: number) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private http: HttpClient) { }
 
@@ -24,10 +27,10 @@ export class HousingService {
   }
 
 
-  getAllProperties(SellRent?: number): Observable<IPropertyBase[]> {
+  getAllProperties(SellRent?: number): Observable<Property[]> {
     return this.http.get("data/properties.json").pipe(
       map(data => {
-        const propertiesarray: Array<IPropertyBase> = [];
+        const propertiesarray: Array<Property> = [];
         const array = Object.values(data);
         const localproperties = JSON.parse(localStorage.getItem('newprop'));
 
